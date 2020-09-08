@@ -4,7 +4,7 @@
   "description": "a simple authentification system using nodejs express &  mongodb",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon start"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "express-validator": "^6.6.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.10.3"
+    "mongoose": "^5.10.3",
+    "nodemon": "^2.0.4"
   }
 }
