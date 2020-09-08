@@ -10,10 +10,12 @@ const PORT = process.env.PORT || 3000; //initializing port
 
 initiMongoServer(); // initializing db server
 
-app.get("/", (req, res) => { // first endpoint
+// first endpoint
+app.get("/", (req, res) => {
   res.json({ message: "API Working" });
 });
 
+// exposing port
 app.listen(PORT, (req, res) => {
   console.log(`Server On at PORT ${PORT}`);
 });
