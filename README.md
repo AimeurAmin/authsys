@@ -8,7 +8,7 @@ yarn start
 port = 3000 by default if not occupied.
 
 
-*to check if the app is working use:
+## to check if the app is working use:
 
 ----localhost:port/ (port is 3000 by default if not occupied by another app!)
 
