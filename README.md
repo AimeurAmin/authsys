@@ -13,11 +13,11 @@ port = 3000 by default if not occupied.
 localhost:port/ (port is 3000 by default if not occupied by another app!)
 
 
-*to register users use:
+### to register users use:
 
-----localhost:port/user/signup
+localhost:port/user/signup
 
---------with the following parameters in Body -> raw -> JSON:
+with the following parameters in Body -> raw -> JSON:
 
 ------------username,
 
