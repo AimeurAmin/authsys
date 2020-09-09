@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const user = require('./routes/user');
 const initiMongoServer = require("./config/db");
 
 const app = express(); 
@@ -14,6 +15,9 @@ initiMongoServer(); // initializing db server
 app.get("/", (req, res) => {
   res.json({ message: "API Working" });
 });
+
+// user router middlerware (signup)
+app.use('/user', user);
 
 // exposing port
 app.listen(PORT, (req, res) => {
