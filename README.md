@@ -19,8 +19,8 @@ localhost:port/user/signup
 
 with the following parameters in Body -> raw -> JSON:
 
-------------username,
+username,
 
-------------email,
+email,
 
-------------password
+password
