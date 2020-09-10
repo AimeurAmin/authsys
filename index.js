@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const user = require('./routes/user');
+const signup = require('./routes/user/signup');
+const login = require('./routes/user/login');
 const initiMongoServer = require("./config/db");
 
 const app = express(); 
@@ -17,7 +19,9 @@ app.get("/", (req, res) => {
 });
 
 // user router middlerware (signup)
-app.use('/user', user);
+// app.use('/user', user);
+app.use('/user', signup);
+app.use('/user', login);
 
 // exposing port
 app.listen(PORT, (req, res) => {
