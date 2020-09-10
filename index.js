@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const user = require('./routes/user');
 const signup = require('./routes/user/signup');
 const login = require('./routes/user/login');
+const profile = require('./routes/user/profile');
 const initiMongoServer = require("./config/db");
 
 const app = express(); 
@@ -22,6 +23,7 @@ app.get("/", (req, res) => {
 // app.use('/user', user);
 app.use('/user', signup);
 app.use('/user', login);
+app.use('/user', profile);
 
 // exposing port
 app.listen(PORT, (req, res) => {

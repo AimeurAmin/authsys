@@ -50,7 +50,7 @@ router.post('/signup',
             // Signing in the user using JWT
             jwt.sign(
                 payload,
-                "randomString",
+                "secret", // randomString
                 {
                     expiresIn: 10000
                 },
