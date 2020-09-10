@@ -120,6 +120,10 @@ router.post(
                         message: "Incorrect password."
                     })
                 }
+            }).catch(err => {
+                res.status(400).json({
+                    message: "User not found! please signup first."
+                })
             });
         } catch (err) {
             console.log(err);
